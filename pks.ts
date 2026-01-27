@@ -1,6 +1,3 @@
-export const PRIVATE_KEY = `
------BEGIN OPENSSH PRIVATE KEY-----
-MIIBOgIBAAJBALuN0dummyKeyDataThatIsNotARealPrivateKeyqwertyuiopasdf
-ghjklzxcvbnm1234567890MIIBOgIBAAJBALuN0dummyKeyDataThatIsNotRealKEy
------END OPENSSH PRIVATE KEY-----
-`;
+// Dummy non-sensitive private key placeholder for tests/development only.
+// Real private keys must be provided via secure configuration and must not
+// be committed to the repository.
