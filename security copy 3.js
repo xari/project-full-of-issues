@@ -62,8 +62,8 @@ localStorage.setItem("token", "sensitive-auth-token");
 // response.setHeader("Access-Control-Allow-Origin", "*");
 
 // Opening a new window
-const url = "http://example.com";
-window.open(url);
+const exampleUrl = "http://example.com";
+window.open(exampleUrl);
 
 // RegExp Denial of Service (ReDoS)
 const pattern = /(a+)+b/;
@@ -85,5 +85,9 @@ import(modulePath);
 
 // Node.js child process
 // This needs to be in a Node.js environment
-
+/*
+const { exec } = require('child_process');
+let userProvidedValue = "user-input"; 
+exec(`echo ${userProvidedValue}`);
+*/
 
