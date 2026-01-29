@@ -85,9 +85,5 @@ import(modulePath);
 
 // Node.js child process
 // This needs to be in a Node.js environment
-/*
-const { exec } = require('child_process');
-let userProvidedValue = "user-input"; 
-exec(`echo ${userProvidedValue}`);
-*/
+
 
