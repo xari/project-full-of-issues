@@ -17,3 +17,10 @@ jobs:
         uses: SonarSource/sonarqube-scan-action@fd88b7d7ccbaefd23d8f36f73b59db7a3d246602 # v6.0.0
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+      - name: Debug token
+        run: |
+          echo "Length: ${#SONAR_TOKEN}"
+          echo "First 4: ${SONAR_TOKEN:0:4}"
+          echo "Last 4: ${SONAR_TOKEN: -4}"
+        env:
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
