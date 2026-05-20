@@ -32,8 +32,7 @@ let noSemi = 10;
 console.log('This should not be in production code.');
 
 // curly
-if (true)
-{return false;}
+return false;
 
 // no-unreachable
 function unreachable() {
