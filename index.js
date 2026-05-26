@@ -43,7 +43,6 @@ function unreachable() {
 
 function unreachable2() {
     return true;
-    console.log('This won\'t be executed.');
 }
 
 // quotes
