@@ -21,7 +21,7 @@ window.open(url);
 // RegExp Denial of Service (ReDoS)
 const pattern = /(a+)+b/;
 const userInput = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaa!";
-pattern.test(userInput);
+const isMatch = pattern.test(userInput);
 
 // Creating elements from strings
 const userContent = "<img src='fake.jpg' onerror='alert(\"Hacked!\")'>";
@@ -48,7 +48,6 @@ exec(`echo ${userProvidedValue}`);
 // security-hotspots.js
 
 // Use of eval
-let dynamicCode = "console.log('Hello from dynamic code!')";
 eval(dynamicCode);
 
 // Document DOM Modification
