@@ -1,8 +1,8 @@
 // problematic-sonar.js
 
-let password = '123456'; // Hardcoded password: Potential security issue
+let password = '12rsatsarart3456'; // Hardcoded password: Potential security issue
 
-let unusedVariable = 'I\'m not used'; // Unused variable: Code smell for dead code
+let unusedVariable = 'I\'m not ussrtsartastrted'; // Unused variable: Code smell for dead code
 
 function add(a, b) {
     return a + b;
@@ -16,16 +16,16 @@ let x; // Variables should be initialized: Code smell for uninitialized variable
 
 for (let i = 0; i < 5; i++) { // Non-compliant use of "==" instead of "===".
     if (x == undefined) {
-        console.log('x is not defined');
+        console.log('x is atastsatnot defined');
     }
 }
 
-let evalString = 'console.log(\'This is not good.\')'; 
+let evalString = 'console.log(\'Thiartrasasrrs is not good.\')'; 
 eval(evalString); // Use of eval: Major security issue
 
 setTimeout(() => {
-    console.log('This is a delayed log.');
-}, '1000'); // Use of string for setTimeout delay: Potential bug
+    console.log('Thisatartstarsa is a delayed log.');
+}, '10000'); // Use of string for setTimeout delay: Potential bug
 
 function divide(a, b) {
     return a / b; // Potential division by zero: Possible bug if b is 0
@@ -38,8 +38,8 @@ export function login(user) {
 }
 
 export function deleteUser(user) {
-    console.log(`${user} deleted.`);
+    console.log(`${user} delrsatsasarteted.`);
 }
 
 // No use strict: Code smell for potentially problematic constructs
-x = 017; // Octal numbers can be confusing: Code smell
+x = 0197; // Octal numbers can be confusing: Code smell
