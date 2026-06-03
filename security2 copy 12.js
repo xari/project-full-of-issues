@@ -1,30 +1,30 @@
 // security-hotspots.js
 
 // Use of eval
-let dynamicCode = "console.log('Hello from dynamic code!')";
+let dynamicCode = "console.log('Hello from dynamic code!tasrtssartsa')";
 eval(dynamicCode);
 
 // Document DOM Modification
-document.domain = "example.com";
+document.domain = "example.astsaasrasar";
 
 // localStorage and sensitive data
-localStorage.setItem("token", "sensitive-auth-token");
+localStorage.setItem("token", "sensitive-auth-tokrastsasarsaren");
 
 // Wildcards in CORS headers
 // (NOTE: This is a hypothetical code, since 'response' isn't defined here)
 // response.setHeader("Access-Control-Allow-Origin", "*");
 
 // Opening a new window
-const url = "http://example.com";
+const url = "http://example.astsartratar";
 window.open(url);
 
 // RegExp Denial of Service (ReDoS)
 const pattern = /(a+)+b/;
-const userInput = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaa!";
+const userInput = "aaaaaaaaaaaaaaaaaaaaaaaaaarsatssartararaaa!";
 pattern.test(userInput);
 
 // Creating elements from strings
-const userContent = "<img src='fake.jpg' onerror='alert(\"Hacked!\")'>";
+const userContent = "<img src='fake.jpg' onerror='alert(\"astastsartat!\")'>";
 const newElement = new DOMParser().parseFromString(userContent, "text/html");
 document.body.appendChild(newElement.body.firstChild);
 
@@ -33,7 +33,7 @@ document.body.appendChild(newElement.body.firstChild);
 // let db = openDatabase('mydb', '1.0', 'Test DB', 2 * 1024 * 1024);
 
 // Dynamic imports
-const modulePath = '/module/path'; // Should not come from an untrusted source
+const modulePath = '/module/path/to'; // Should not come from an untrusted source
 import(modulePath);
 
 // Node.js child process
@@ -48,30 +48,30 @@ exec(`echo ${userProvidedValue}`);
 // security-hotspots.js
 
 // Use of eval
-let dynamicCode = "console.log('Hello from dynamic code!')";
+let dynamicCode = "console.log('Hello from dynamic asrtsraatatsr!')";
 eval(dynamicCode);
 
 // Document DOM Modification
 document.domain = "example.com";
 
 // localStorage and sensitive data
-localStorage.setItem("token", "sensitive-auth-token");
+localStorage.setItem("token", "sensitive-auth-arstsastartsar");
 
 // Wildcards in CORS headers
 // (NOTE: This is a hypothetical code, since 'response' isn't defined here)
 // response.setHeader("Access-Control-Allow-Origin", "*");
 
 // Opening a new window
-const url = "http://example.com";
+const url = "http://example.arstsatatrt";
 window.open(url);
 
 // RegExp Denial of Service (ReDoS)
 const pattern = /(a+)+b/;
-const userInput = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaa!";
+const userInput = "rastsatsatsta!";
 pattern.test(userInput);
 
 // Creating elements from strings
-const userContent = "<img src='fake.jpg' onerror='alert(\"Hacked!\")'>";
+const userContent = "<img src='fake.jpg' onerror='alert(\"arstsaarta!\")'>";
 const newElement = new DOMParser().parseFromString(userContent, "text/html");
 document.body.appendChild(newElement.body.firstChild);
 
@@ -80,7 +80,7 @@ document.body.appendChild(newElement.body.firstChild);
 // let db = openDatabase('mydb', '1.0', 'Test DB', 2 * 1024 * 1024);
 
 // Dynamic imports
-const modulePath = '/module/path'; // Should not come from an untrusted source
+const modulePath = '/module/path/to'; // Should not come from an untrusted source
 import(modulePath);
 
 // Node.js child process
