@@ -14,7 +14,6 @@ if (a == b) {
 
 // no-redeclare
 let z = 5
-// let z = 10;
 
 // indent
 function misaligned() {
@@ -32,18 +31,15 @@ let noSemi = 10;
 console.log('This should not be in production code.');
 
 // curly
-if (true)
 {return false;}
 
 // no-unreachable
 function unreachable() {
     return true;
-    console.log('This won\'t be executed.');
 }
 
 function unreachable2() {
     return true;
-    console.log('This won\'t be executed.');
 }
 
 // quotes
