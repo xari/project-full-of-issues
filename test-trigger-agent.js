@@ -21,7 +21,7 @@ window.open(url);
 // RegExp Denial of Service (ReDoS)
 const pattern = /(a+)+b/;
 const userInput = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaa!";
-pattern.test(userInput);
+const testResult = pattern.test(userInput);
 
 // Creating elements from strings
 const userContent = "<img src='fake.jpg' onerror='alert(\"Hacked!\")'>";
@@ -38,18 +38,14 @@ import(modulePath);
 
 // Node.js child process
 // This needs to be in a Node.js environment
-/*
-const { exec } = require('child_process');
-let userProvidedValue = "user-input"; 
-exec(`echo ${userProvidedValue}`);
-*/
+
 
 
 // security-hotspots.js
 
 // Use of eval
-let dynamicCode = "console.log('Hello from dynamic code!')";
-eval(dynamicCode);
+let dynamicCode2 = "console.log('Hello from dynamic code!')";
+eval(dynamicCode2);
 
 // Document DOM Modification
 document.domain = "example.com";
@@ -62,31 +58,27 @@ localStorage.setItem("token", "sensitive-auth-token");
 // response.setHeader("Access-Control-Allow-Origin", "*");
 
 // Opening a new window
-const url = "http://example.com";
-window.open(url);
+const url2 = "http://example.com";
+window.open(url2, "_blank", "noopener");
 
 // RegExp Denial of Service (ReDoS)
-const pattern = /(a+)+b/;
-const userInput = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaa!";
-pattern.test(userInput);
+const pattern2 = /(a+)+b/;
+const userInput2 = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaa!";
+const testResult2 = pattern2.test(userInput2);
 
 // Creating elements from strings
-const userContent = "<img src='fake.jpg' onerror='alert(\"Hacked!\")'>";
-const newElement = new DOMParser().parseFromString(userContent, "text/html");
-document.body.appendChild(newElement.body.firstChild);
+const userContent2 = "<img src='fake.jpg' onerror='alert(\"Hacked!\")'>";
+const newElement2 = new DOMParser().parseFromString(userContent2, "text/html");
+document.body.appendChild(newElement2.body.firstChild);
 
 // WebSQL Database
 // (NOTE: This is a hypothetical example since WebSQL might not be available in all browsers)
 // let db = openDatabase('mydb', '1.0', 'Test DB', 2 * 1024 * 1024);
 
 // Dynamic imports
-const modulePath = '/module/path'; // Should not come from an untrusted source
-import(modulePath);
+const modulePath2 = '/module/path'; // Should not come from an untrusted source
+import(modulePath2);
 
 // Node.js child process
 // This needs to be in a Node.js environment
-/*
-const { exec } = require('child_process');
-let userProvidedValue = "user-input"; 
-exec(`echo ${userProvidedValue}`);
-*/
+
