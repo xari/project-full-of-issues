@@ -21,7 +21,7 @@ window.open(url);
 // RegExp Denial of Service (ReDoS)
 const pattern = /(a+)+b/;
 const userInput = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaa!";
-pattern.test(userInput);
+const _testResult = pattern.test(userInput);
 
 // Creating elements from strings
 const userContent = "<img src='fake.jpg' onerror='alert(\"Hacked!\")'>";
@@ -38,15 +38,11 @@ import(modulePath);
 
 // Node.js child process
 // This needs to be in a Node.js environment
-/*
-const { exec } = require('child_process');
-let userProvidedValue = "user-input"; 
-exec(`echo ${userProvidedValue}`);
-*/
+
 
 
 // security-hotspots.js
-
+{
 // Use of eval
 let dynamicCode = "console.log('Hello from dynamic code!')";
 eval(dynamicCode);
@@ -63,12 +59,12 @@ localStorage.setItem("token", "sensitive-auth-token");
 
 // Opening a new window
 const url = "http://example.com";
-window.open(url);
+window.open(url, "_blank", "noopener");
 
 // RegExp Denial of Service (ReDoS)
 const pattern = /(a+)+b/;
 const userInput = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaa!";
-pattern.test(userInput);
+const _testResult = pattern.test(userInput);
 
 // Creating elements from strings
 const userContent = "<img src='fake.jpg' onerror='alert(\"Hacked!\")'>";
@@ -85,8 +81,5 @@ import(modulePath);
 
 // Node.js child process
 // This needs to be in a Node.js environment
-/*
-const { exec } = require('child_process');
-let userProvidedValue = "user-input"; 
-exec(`echo ${userProvidedValue}`);
-*/
+}
+
