@@ -38,7 +38,6 @@ if (true)
 // no-unreachable
 function unreachable() {
     return true;
-    console.log('This won\'t be executed.');
 }
 
 function unreachable2() {
