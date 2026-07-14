@@ -14,7 +14,6 @@ if (a == b) {
 
 // no-redeclare
 let z = 5
-// let z = 10;
 
 // indent
 function misaligned() {
