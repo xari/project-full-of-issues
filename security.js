@@ -1,8 +1,7 @@
 // security-hotspots.js
 
 // Use of eval
-let dynamicCode = "console.log('Hello from dynamic code!')";
-eval(dynamicCode);
+window.console.log('Hello from dynamic code!');
 
 // Document DOM Modification
 document.domain = "example.com";
@@ -48,8 +47,7 @@ exec(`echo ${userProvidedValue}`);
 // security-hotspots.js
 
 // Use of eval
-let dynamicCode = "console.log('Hello from dynamic code!')";
-eval(dynamicCode);
+window.console.log('Hello from dynamic code!');
 
 // Document DOM Modification
 document.domain = "example.com";
