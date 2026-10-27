@@ -1,0 +1,3 @@
+
+// Run the code directly instead of evaluating it from a string
+console.log('Hello from dynamic code!');
