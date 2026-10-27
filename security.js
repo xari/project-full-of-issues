@@ -1,8 +1,8 @@
 // security-hotspots.js
 
 // Use of eval
-let dynamicCode = "console.log('Hello from dynamic code!')";
-eval(dynamicCode);
+const runDynamicCode = () => console.log('Hello from dynamic code!');
+runDynamicCode();
 
 // Document DOM Modification
 document.domain = "example.com";
