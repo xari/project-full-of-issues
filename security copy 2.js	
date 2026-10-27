@@ -1,0 +1,4 @@
+
+// Use of eval (replaced with a direct function call)
+const dynamicHandler = () => console.log('Hello from dynamic code!');
+dynamicHandler();
