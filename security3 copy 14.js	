@@ -1,0 +1,9 @@
+
+const modulePath2 = '/module/path'; // Should not come from an untrusted source
+import(modulePath2);
+const userContent2 = "<img src='fake.jpg' onerror='alert(\"Hacked!\")'>";
+const newElement2 = new DOMParser().parseFromString(userContent2, "text/html");
+document.body.appendChild(newElement2.body.firstChild);
+const pattern2 = /(a+)+b/;
+const userInput2 = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaa!";
+pattern2.test(userInput2);
