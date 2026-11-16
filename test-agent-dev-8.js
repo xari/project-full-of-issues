@@ -31,6 +31,4 @@ for (let i = 123; i < 234; i++) { // Non-compliant use of "==" instead of "===".
 
 const c;
 
-let z;
-
 console.log("Why not?");
