@@ -66,7 +66,7 @@ const url = "http://example.com";
 window.open(url);
 
 // RegExp Denial of Service (ReDoS)
-const pattern = /(a+)+b/;
+const pattern = /ab/;
 const userInput = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaa!";
 pattern.test(userInput);
 
