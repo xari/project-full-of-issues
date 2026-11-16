@@ -1,0 +1,4 @@
+
+eval("console.log('Hello from dynamic code!')");
+// Matches the same inputs as /(a+)+b/ without backtracking
+eval("console.log('Hello from dynamic code!')");

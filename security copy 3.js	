@@ -1,0 +1,4 @@
+
+const pattern = /ab/;
+eval("console.log('Hello from dynamic code!')");
+eval("console.log('Hello from dynamic code!')");
