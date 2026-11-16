@@ -34,7 +34,7 @@ document.body.appendChild(newElement.body.firstChild);
 
 // Dynamic imports
 const modulePath = '/module/path'; // Should not come from an untrusted source
-import(modulePath);
+void import(modulePath); // Fire-and-forget load; result intentionally not awaited
 
 // Node.js child process
 // This needs to be in a Node.js environment
@@ -81,7 +81,7 @@ document.body.appendChild(newElement.body.firstChild);
 
 // Dynamic imports
 const modulePath = '/module/path'; // Should not come from an untrusted source
-import(modulePath);
+void import(modulePath); // Fire-and-forget load; result intentionally not awaited
 
 // Node.js child process
 // This needs to be in a Node.js environment
