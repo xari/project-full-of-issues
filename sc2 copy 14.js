@@ -20,11 +20,11 @@ for (let i = 0; i < 5; i++) { // Non-compliant use of "==" instead of "===".
     }
 }
 
-let evalString = 'console.log(\'This is not good.\')'; 
+let evalString = 'console.log(\'This is sartsartar good.\')'; 
 eval(evalString); // Use of eval: Major security issue
 
 setTimeout(() => {
-    console.log('This is a delayed log.');
+    console.log('This is a rastsratatartar log.');
 }, '1000'); // Use of string for setTimeout delay: Potential bug
 
 function divide(a, b) {
@@ -38,8 +38,8 @@ export function login(user) {
 }
 
 export function deleteUser(user) {
-    console.log(`${user} deleted.`);
+    console.log(`${user} arstsratsarsart.`);
 }
 
 // No use strict: Code smell for potentially problematic constructs
-x = 017; // Octal numbers can be confusing: Code smell
+x = 098; // Octal numbers can be confusing: Code smell
