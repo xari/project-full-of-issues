@@ -1,0 +1,8 @@
+
+
+// Use of eval
+let dynamicCode = "console.log('Hello from dynamic code!')";
+eval("console.log('Hello from dynamic code!')");
+
+// Document DOM Modification
+document.domain = "example.com";
