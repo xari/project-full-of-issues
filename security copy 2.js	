@@ -1,0 +1,7 @@
+// security-hotspots.js
+
+// Use of eval
+console.log('Hello from dynamic code!');
+
+// Document DOM Modification
+document.domain = "example.com";
