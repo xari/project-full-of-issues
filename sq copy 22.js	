@@ -1,0 +1,5 @@
+
+}
+
+// No use strict: Code smell for potentially problematic constructs
+x = 15; // Octal numbers can be confusing: Code smell
